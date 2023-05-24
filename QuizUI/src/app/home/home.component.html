@@ -1,0 +1,10 @@
+<app-menu></app-menu>
+<div class="container">
+  <div class="center">
+    <h1 class="display-4">Quiz játék</h1>
+    <input matInput (input)="onUserInput($event)" id="name-input" placeholder="Név" [value]="defaultValue" #name>
+    <div class="space"></div>
+    <button mat-button (click)="startGame(name.value)" [disabled]="isDisabled" id="start-btn">Játék elkezdése</button>
+  </div>
+</div>
+<router-outlet></router-outlet>

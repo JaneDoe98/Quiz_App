@@ -1,0 +1,46 @@
+.container{
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+h1{
+    background-color: steelblue;
+    border-style: solid;
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 20px;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+table{
+    background-color: rgba(20, 80, 192, 0.295);
+}
+
+.mat-column-pos-col {
+    width: 10px;
+    border: 1px solid;
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.mat-column-name-col{
+    width: 100%;
+    border: 1px solid;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}
+
+.mat-column-score-col{
+    width: 10px;
+    border: 1px solid currentColor;
+    text-align: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}

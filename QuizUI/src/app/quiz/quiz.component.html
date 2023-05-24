@@ -1,0 +1,38 @@
+<div>
+    <br>
+    <div id="questionContainer">
+        <h1 id="questionTitle-el">{{question.questionName}}</h1>
+
+        <button mat-button [ngStyle]="optionAStyle" (click)="checkAnswer('A')" [ngClass]="answerBtn" class="answer-btn"
+            [disabled]="!enableButton" [style.pointer-events]="enableClick" id="A">
+            <p>A</p>
+            <p id="answerA">{{question.answerA}}</p>
+        </button>
+        <button mat-button [ngStyle]="optionBStyle" (click)="checkAnswer('B')" [ngClass]="answerBtn" class="answer-btn"
+            [disabled]="!enableButton" [style.pointer-events]="enableClick" id="B">
+            <p>B</p>
+            <p id="answerB">{{question.answerB}}</p>
+        </button>
+        <br>
+        <button mat-button [ngStyle]="optionCStyle" (click)="checkAnswer('C')" [ngClass]="answerBtn" class="answer-btn"
+            [disabled]="!enableButton" [style.pointer-events]="enableClick" id="C">
+            <p>C</p>
+            <p id="answerC">{{question.answerC}}</p>
+        </button>
+        <button mat-button [ngStyle]="optionDStyle" (click)="checkAnswer('D')" [ngClass]="answerBtn" class="answer-btn"
+            [disabled]="!enableButton" [style.pointer-events]="enableClick" id="D">
+            <p>D</p>
+            <p id="answerD">{{question.answerD}}</p>
+        </button>
+    </div>
+
+    <div class="space"></div>
+    <div id="resultContainer">
+        <h2 [innerHTML]="resultInnerHTML" [ngStyle]="resultStyle" id="result-el"></h2>
+        <br>
+        <button mat-button [ngStyle]="nextQuestionBtnStyle" (click)="newQuestion()" id="nextQuestion-btn">Következő kérdés</button>
+        <button mat-button [ngStyle]="endGameBtnStyle" (click)="saveAndHome()" id="endGame-btn">Pontszám mentése, és vissza a kezdőlapra</button>
+        <br>
+    </div>
+    <span [ngStyle]="scoreStyle" id="score-el">Pontszám: {{score}}</span>
+</div>
