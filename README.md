@@ -5,7 +5,7 @@ Magyar nyelvű quiz játék
 Főbb technológiák:
 - Angular 16
 - WebApi (.net 6)
-- SQL Server
+- MSSQL Server
 
 ## Működése
 
