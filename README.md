@@ -13,7 +13,5 @@ A felhasználó egy név megadása után elkezdheti a játékot, melyben egy ada
 
 A top 10 pontszám egy eredményjelzőn megtekinthető.
 
-Előfordulhat, hogy az adatok betöltése legelőször igen lassú (kb. 10 mp).
-
-A web oldal elérhető: quizgame-b900f.web.app
+~~A web oldal elérhető: quizgame-b900f.web.app~~ Jelenleg nem elérhető
 
